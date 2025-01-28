@@ -1,0 +1,10 @@
+- name: Update apt
+  apt: 
+    update_cache=yes
+
+- name: Install Apache
+  apt:
+    name=apache2
+    state=latest
+
+- name: Configure Apache
